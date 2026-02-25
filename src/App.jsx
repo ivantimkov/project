@@ -6,6 +6,7 @@ import ResultPage from "./pages/ResultPage";
 import { SettingsProvider } from "./context/SettingsContext";
 import SettingsForm from "./components/SettingsForm";
 import GameOverPortal from "./components/GameOverPortal";
+import CookiePopup from "./components/CookiePopup";
 
 function App() {
   const [page, setPage] = useState("start");
@@ -69,6 +70,7 @@ function App() {
           }}
         />
       </div>
+      <CookiePopup />
     </SettingsProvider>
   );
 }
