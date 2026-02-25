@@ -1,6 +1,11 @@
 import React from "react";
 import CookieConsent from "react-cookie-consent";
 
+/**
+ * Банер згоди з політикою файлів Cookie (GDPR).
+ * @component
+ * @returns {JSX.Element} Спливаюче вікно з кнопками прийняття/відмови.
+ */
 const CookiePopup = () => {
   return (
     <CookieConsent

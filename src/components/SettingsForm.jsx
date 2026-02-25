@@ -9,7 +9,13 @@ const Schema = Yup.object().shape({
   elements: Yup.number().min(4).max(12).required('Required'),
   speed: Yup.number().min(1).max(5).required('Required')
 });
-
+/**
+ * Форма налаштувань гри з використанням Formik та Yup.
+ * @component
+ * @param {Object} props - Властивості компонента.
+ * @param {function} props.onClose - Функція закриття форми після збереження.
+ * @returns {JSX.Element} Картка з полями вибору складності, кількості елементів та швидкості.
+ */
 export default function SettingsForm({ onClose }) {
   const { settings, setSettings } = useContext(SettingsContext);
 
@@ -22,7 +28,7 @@ export default function SettingsForm({ onClose }) {
         validationSchema={Schema}
         onSubmit={(values) => {
           setSettings(values);
-          onClose?.();
+          onClose?.(values);
         }}
       >
         {({ values }) => (

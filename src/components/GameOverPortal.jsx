@@ -1,6 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+/**
+ * Модальне вікно завершення гри, реалізоване через React Portal.
+ * @component
+ * @param {Object} props - Властивості компонента.
+ * @param {boolean} props.isOpen - Статус відображення модального вікна.
+ * @param {function} props.onClose - Коллбек для закриття вікна.
+ * @param {function} props.onNext - Коллбек для переходу до наступного туру.
+ * @param {Object} props.stats - Об'єкт зі статистикою гри.
+ * @param {string} props.stats.message - Текстове повідомлення результату.
+ * @returns {React.Portal|null} Рендериться в document.body.
+ */
 export default function GameOverPortal({ isOpen, onClose, onNext, stats }) {
   if (!isOpen) return null;
 

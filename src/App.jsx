@@ -70,7 +70,7 @@ function App() {
           }}
         />
       </div>
-      <CookiePopup />
+      <CookieConsent />
     </SettingsProvider>
   );
 }

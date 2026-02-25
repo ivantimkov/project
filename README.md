@@ -1,101 +1,56 @@
-# Hangman Game – React Application
+# 🎮 Гра "Шибениця" (Hangman) – React застосунок
 
-## Project Overview
+## 📝 Огляд проєкту
+Це веб-гра "Шибениця", розроблена на базі **React** та **Vite**. Проєкт демонструє використання сучасних фронтенд-технологій, роботу з глобальним станом (Context API), валідацію форм та повну технічну документацію.
 
-This project is a web-based Hangman game developed using React and Vite.  
-The application demonstrates modern frontend development practices including:
-
-- Component-based architecture
-- React Hooks for state management
-- Modular folder structure
-- Generated documentation (JSDoc)
-- Storybook component documentation
-- GDPR-compliant cookie consent implementation
-
-The project was prepared as part of the KOP course requirements.
+Проєкт виконано відповідно до вимог курсу з розробки програмного забезпечення (KOP).
 
 ---
 
-## Features
-
-- Interactive Hangman gameplay
-- Dynamic keyboard component
-- Game state management
-- Restart functionality
-- Cookie consent popup (GDPR compliant)
-- Component documentation with Storybook
-- Auto-generated technical documentation
+## 🛠 Технологічний стек та конфігурації
+- **Ядро:** React 18, Vite (швидка збірка)
+- **Форми та валідація:** Formik, Yup
+- **Документація:** JSDoc, Storybook 10.2
+- **Юридична відповідність:** MIT License, GDPR-ready
 
 ---
 
-## Installation
+## 💻 Базові команди
 
-Clone the repository:
+Для запуску проєкту та інструментів документації використовуйте наступні команди:
 
-git clone <your-repository-link>
-cd hangman-app
+### Запуск розробки (Development)
+`npm run dev`
 
----
+### Запуск Storybook (Компоненти)
+`npm run storybook`
 
-## Install dependencies:
-
-npm install
-
----
-
-## Available Scripts:
-Run development server:
-
-npm run dev
-
-Build project:
-
-npm run build
-
-Run Storybook:
-
-npm run storybook
-
-Generate documentation:
-
-npm run docs
+### Генерація документації (JSDoc)
+`npm run docs`
 
 ---
 
-## Project Structure
-
-src/
-  components/
-  context/
-  hooks/
-  pages/
-  App.jsx
-  index.css
-  main.jsx
+## 📂 Структура проєкту
+- `src/components/` — UI компоненти та їх історії (`.stories.jsx`)
+- `src/context/` — Глобальний стан гри
+- `docs/` — Згенерована технічна документація
+- `.storybook/` — Конфігураційні файли Storybook
 
 ---
 
-## GDPR & Legal
+## ⚖️ Ліцензія та GDPR
+Проєкт розроблено з урахуванням стандартів прозорості даних:
 
-This project includes:
-
-- Cookie consent popup
-
-- Privacy Policy
-
-- MIT License
-
-- License dependency report
+- **Ліцензія:** Проєкт розповсюджується під [MIT License](./LICENSE).
+- **Звіт про залежності:** Повний перелік ліцензій сторонніх бібліотек — [license-report.txt](./license-report.txt).
+- **Конфіденційність:** Політика обробки даних — [PRIVACY_POLICY.md](./PRIVACY_POLICY.md).
+- **GDPR:** Впроваджено Cookie Consent popup для згоди користувача на використання LocalStorage.
 
 ---
 
-## Author
-
-Timkov Ivan IPZk-24-1
+## 👤 Автор
+**Тімков Іван** Студент групи: **ІПЗк-24-1** Навчальний заклад: **Житомирська політехніка**
 
 ---
 
-## License
-
-This project is licensed under the MIT License.
-See the LICENSE file for details.
+© 2026 Hangman Project. Всі права захищені.
